@@ -8,10 +8,13 @@ public class ChecklistController extend checklist extend ChecklistView{
     public ChecklistController(Checklist model, ChecklistView view) {
         this.model = model;
         this.view = view;
+        
+        //Implement here 
     }
 
     public void setChecklistName(String name) {
         model.setName(name);
+        
     }
 
     public String getChecklistName() {
