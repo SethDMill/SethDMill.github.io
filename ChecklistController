@@ -1,0 +1,33 @@
+import java.util.Date;
+import java.util.List;
+
+public class ChecklistController extend checklist extend ChecklistView{
+    private Checklist model;
+    private ChecklistView view;
+
+    public ChecklistController(Checklist model, ChecklistView view) {
+        this.model = model;
+        this.view = view;
+    }
+
+    public void setChecklistName(String name) {
+        model.setName(name);
+    }
+
+    public String getChecklistName() {
+        return model.getName();
+    }
+
+    public void setChecklistDueDate(Date dueDate) {
+        model.setDueDate(dueDate);
+    }
+
+    public Date getChecklistDueDate() {
+        return model.getDueDate();
+    }
+
+    public void regulations() {
+        // implemntations of restrictions depending on employee or employer
+    }
+
+    
